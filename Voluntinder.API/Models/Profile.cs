@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Voluntinder.API.Models
 {
@@ -11,26 +12,31 @@ namespace Voluntinder.API.Models
         /// <summary>
         /// The volunteer's name
         /// </summary>
+        [JsonProperty("Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// A URL of the volunteer's profile picture
         /// </summary>
+        [JsonProperty("Picture")]
         public Uri Picture { get; set; }
 
         /// <summary>
         /// The volunteer's birth date
         /// </summary>
+        [JsonProperty("BirthDate")]
         public DateTime BirthDate { get; set; }
 
         /// <summary>
         /// The volunteer's chosen gender
         /// </summary>
+        [JsonProperty("ChosenGender")]
         public Gender ChosenGender { get; set; }
 
         /// <summary>
         /// The volunteer's biography
         /// </summary>
+        [JsonProperty("Biography")]
         public String Biography { get; set; }
 
         /// <summary>
