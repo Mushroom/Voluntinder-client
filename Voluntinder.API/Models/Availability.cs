@@ -13,39 +13,39 @@ namespace Voluntinder.API.Models
         /// <summary>
         /// The availability on a Monday
         /// </summary>
-        public AvailabilityPeriod Monday { get; private set; }
+        public AvailabilityPeriod Monday { get; set; }
 
         /// <summary>
         /// The availability on a Tuesday
         /// </summary>
-        public AvailabilityPeriod Tuesday { get; private set; }
+        public AvailabilityPeriod Tuesday { get; set; }
 
         /// <summary>
         /// The availability on a Wednesday
         /// </summary>
-        public AvailabilityPeriod Wednesday { get; private set; }
+        public AvailabilityPeriod Wednesday { get; set; }
 
         /// <summary>
         /// The availability on a Thursday
         /// </summary>
 
-        public AvailabilityPeriod Thursday { get; private set; }
+        public AvailabilityPeriod Thursday { get; set; }
 
 
         /// <summary>
         /// The availability on a Friday
         /// </summary>
-        public AvailabilityPeriod Friday { get; private set; }
+        public AvailabilityPeriod Friday { get; set; }
 
         /// <summary>
         /// The availability on a Saturday
         /// </summary>
-        public AvailabilityPeriod Saturday { get; private set; }
+        public AvailabilityPeriod Saturday { get; set; }
 
         /// <summary>
         /// The availability on a Sunday
         /// </summary>
-        public AvailabilityPeriod Sunday { get; private set; }
+        public AvailabilityPeriod Sunday { get; set; }
 
         /// <summary>
         /// Represents the (inclusive) period of availability for a volunteer on a certain day
@@ -58,12 +58,12 @@ namespace Voluntinder.API.Models
             /// <summary>
             /// The start time of the period
             /// </summary>
-            public String StartTime { get; private set; }
+            public String StartTime { get; set; }
 
             /// <summary>
             /// The end time of the period
             /// </summary>
-            public String EndTime { get; private set; }
+            public String EndTime { get; set; }
         }
     }
 }

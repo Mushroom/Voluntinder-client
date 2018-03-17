@@ -11,37 +11,37 @@ namespace Voluntinder.API.Models
         /// <summary>
         /// The volunteer's name
         /// </summary>
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// A URL of the volunteer's profile picture
         /// </summary>
-        public Uri Picture { get; private set; }
+        public Uri Picture { get; set; }
 
         /// <summary>
         /// The volunteer's birth date
         /// </summary>
-        public DateTime BirthDate { get; private set; }
+        public DateTime BirthDate { get; set; }
 
         /// <summary>
         /// The volunteer's chosen gender
         /// </summary>
-        public Gender ChosenGender { get; private set; }
+        public Gender ChosenGender { get; set; }
 
         /// <summary>
         /// The volunteer's biography
         /// </summary>
-        public String Biography { get; private set; }
+        public String Biography { get; set; }
 
         /// <summary>
         /// The volunteer's employment history
         /// </summary>
-        public List<EmploymentHistory> EmploymentHistories { get; private set; }
+        public List<EmploymentHistory> EmploymentHistories { get; set; }
 
         /// <summary>
         /// The volunteer's qualifications
         /// </summary>
-        public List<String> Qualifications { get; private set; }
+        public List<String> Qualifications { get; set; }
 
         /// <summary>
         /// Represents a period of employment history
@@ -51,7 +51,7 @@ namespace Voluntinder.API.Models
             /// <summary>
             /// The start date of the employment history
             /// </summary>
-            public DateTime StartDate { get; private set; }
+            public DateTime StartDate { get; set; }
 
             /// <summary>
             /// The end date of the employment history
@@ -59,12 +59,12 @@ namespace Voluntinder.API.Models
             /// <remarks>
             /// If null can be assumed the volunteer is still in the position
             /// </remarks>
-            public DateTime? EndDate { get; private set; } // Nullable because the volunteer may still be in this position
+            public DateTime? EndDate { get; set; }
 
             /// <summary>
             /// The description of the employment history
             /// </summary>
-            public String Description { get; private set; }
+            public String Description { get; set; }
         }
 
         /// <summary>

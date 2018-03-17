@@ -12,12 +12,12 @@ namespace Voluntinder.API.Models
         /// <summary>
         /// The ID of the position to respond to
         /// </summary>
-        public String PositionID { get; private set; }
+        public String PositionID { get; set; }
 
         /// <summary>
         /// The response status
         /// </summary>
-        public Status ResponseStatus { get; private set; }
+        public Status ResponseStatus { get; set; }
 
         /// <summary>
         /// Represents the status of a response to a position (ie, Accept, Reject, etc)
