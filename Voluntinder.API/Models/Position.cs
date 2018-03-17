@@ -10,6 +10,11 @@ namespace Voluntinder.API.Models
     public class Position
     {
         /// <summary>
+        /// The position ID
+        /// </summary>
+        public String ID { get; private set; }
+
+        /// <summary>
         /// The banner picture for the position as provided by the company
         /// </summary>
         public Uri BannerPicture { get; private set; }
